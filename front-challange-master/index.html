@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <link rel="stylesheet" type="text/css" href="css/css1.css"/>
+    <link rel="stylesheet" type="text/css" href="css/css2.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script language="JavaScript" src="js/script.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+</head>
+<body style="background-color: rgb(71, 107, 219);">
+<div align="center" class="container  marg-geral  w3-border w3-round-large "
+     style="background-color: white; height: 900px">
+    <div class="pad-right " align="right">
+        <form name="myForm" onsubmit="return validateForm()" method="post">
+            <img src="Img/pug.jpg" align="left" class="img-aling w3-border w3-round-large" style="width: auto">
+            <div class="pad-top " align="right">
+                <h1 class="pad-right" align="right">Create an Account!</h1>
+                <input class="w3-padding-16 w3-panel w3-border w3-round-xxlarge form-control " type="text" id="nome"
+                       placeholder="First name" style="width: 19%" required/>
+                <input class="w3-padding-16 w3-panel w3-border w3-round-xxlarge form-control input" type="number"
+                       id="phone"
+                       placeholder="Phone" style="width: 19%" required>
+            </div>
+            <div align="right">
+                <input class="w3-padding-16 w3-panel w3-border w3-round-xxlarge form-control" type="email" id="email"
+                       placeholder="Email Address" style="width: 38.5%" required/>
+            </div>
+            <div align="right">
+
+                <input class="w3-padding-16 w3-panel w3-border w3-round-xxlarge form-control" type="password" id="pass"
+                       placeholder="Password " style="width: 19%" required></input>
+                <input class="w3-padding-16 w3-panel w3-border w3-round-xxlarge form-control" type="password"
+                       id="repass"
+                       placeholder="Repeat Password" style="width: 19%" required></input>
+            </div>
+            <div class="w3-padding-16">
+                <button class="w3-padding-16 w3-button w3-blue w3-border w3-round-xxlarge form-control" type="submit"
+                        value="Submit"
+                        id="resgister"
+                        style="width: 38%">
+                    Register Account
+                </button>
+            </div>
+            <hr width=38%>
+            <div>
+                <button class="fa fa-google w3-padding-16 w3-button w3-red w3-border w3-round-xxlarge form-control"
+                        id="resgoogle"
+                        style="width: 38%">
+                    Register with Google
+                </button>
+            </div>
+            <div class="w3-padding-16">
+                <button class="fa fa-facebook w3-padding-16 w3-button btn-facebook w3-border w3-round-xxlarge form-control "
+                        id="resfacebook"
+                        style="width: 38%"> Register with Facebook
+                </button>
+            </div>
+            <hr width=38%>
+            <div><a class="pad-link" href="url" style="text-decoration: none">Forgot Password?</a></div>
+            <a class="pad-link2" href="url" style="text-decoration: none">Already have an account?Login!</a>
+
+        </form>
+    </div>
+
+</div>
+</body>
+</html>
