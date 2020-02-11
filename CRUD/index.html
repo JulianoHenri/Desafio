@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        
+    </title>
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <script>src="script.js"</script>
+        <script>src="styles.css"</script>
+</head>
+
+<body style="background-color: rgb(132, 122, 141);">
+    
+        
+            
+                <form onsubmit="event.preventDefault();salvarForm();" >
+                    <label class="hide" id="validar" style="color: red; ">Nome e E-Mail são obrigatorio.</label>
+                    
+                <div style="border-style: solid ; padding: 10px; margin: 10px; " >
+                    <h4>Novo Aluno</h4>
+                        <div style="text-align: center;"   >
+                            <label for="nome"></label><input type="text" id="nome" name="nome" placeholder="Nome" style="border-style: solid;width: 48.8%; ">
+                            <label for="email"></label><input type="email" id="email" name="email" placeholder="E-mail" style="border-style: solid;width: 48.8%;">
+                        </div>
+                        <div style="padding-top: 0.5%;text-align: center;">
+                            <label for="telefone"></label><input type="tel" id="telefone" name="telefone" placeholder="Telefone" style="border-style: solid;width: 24.3%;">
+                            <label for="celular"></label><input type="tel" id="celular" name="celular" placeholder="Celular" style="border-style: solid;width: 24.3%;">
+                            <label for="cpf"></label><input  type="text" id="cpf" name="cpf" placeholder="CPF" maxlength="14" style="border-style: solid;width: 24.3%;">
+                            <label for="nascimento"></label><input type="date" id="nascimento" name="dNascimento" placeholder="Data de Nascimento" style="border-style: solid;width: 24.3%;">
+                        </div>
+                        <div style="padding-top: 0.5%;text-align: right; padding-right: 1.1%;">
+                            <button type="reset"style='font-size:18px; box-shadow: 5px 5px 5px black;' class="btn btn-danger "><i class=' fas fa-ban'></i> Cancelar</button>
+                            <button type="submit" value="Submit" style="font-size:18px; box-shadow: 5px 5px 5px black;" class="btn btn-success "><i class=' fas fa-save'></i> Adicionar</button>
+                        </div>
+                </div>
+                </form>
+            </td>
+            <td>
+                <div  style="margin: 10px; padding-top: 1%;">
+                    <h3>Lista de Alunos</h3>
+                <table class="list table table-striped table table-bordered" style="border-style: solid; text-align: center; " id="alunoList">
+                    <thead>
+                        <tr class="bg-secondary text-white"  >
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                            <th>Celular</th>
+                            <th>Telefone</th>
+                            <th>CPF</th>
+                            <th>Data de Nascimento</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody >
+
+                    </tbody>
+                </table>
+                </div>
+            
+        
+    
+    <script src="js/script.js"></script>
+</body>
+
+</html>
